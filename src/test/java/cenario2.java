@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.Assert.assertEquals;
 
 public class cenario2 {
- //
+
     public static void main (String[] args) {
         System.setProperty("webdriver.chrome.driver", "src\\drive_oficial\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
