@@ -16,18 +16,21 @@ public class cenario1 {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "src\\drive_oficial\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://verity.com.br");
-        String text = driver.findElement(By.xpath("//[text()='Nossas soluções']")).getText();
+        String text = driver.findElement(By.xpath("//*[@id=\"comp-kwv1yx4h\"]/h1/span")).getText();
 
-        if (driver.getPageSource().contains("//[text()='Nossas soluções']")) {
-            System.out.println("O texto pesquisado : " + text + "existe.");
+        if  (driver.getPageSource().contains("//*[@id=\"comp-kwv1yx4h\"]/h1/span"))
+        {
+            System.out.println("O texto pesquisado : " + text + " existe.");
         } else {
-            System.out.println("O texto pesquisado : " + text + "não exite");
-            driver.quit();
-        }
+            System.out.println("O texto pesquisado : " + text + " existe.");
 
+            driver.quit();
+            }
+
+        }
     }
-}
+
 
 

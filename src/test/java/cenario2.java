@@ -12,6 +12,7 @@ public class cenario2 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://verity.com.br");
 
+
         WebElement acessomenu = driver.findElement(By.id("comp-kevyodnk5label"));
         acessomenu.click();
 
@@ -42,6 +43,7 @@ public class cenario2 {
        driver.findElement(By.className("M3I7Z2")).click();
 
        //driver.close();
+
 
 
 
