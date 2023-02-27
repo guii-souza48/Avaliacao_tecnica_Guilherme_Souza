@@ -51,3 +51,14 @@ E preenche os requisitos "Nome/E-mail/Telefone-Celular/Nos conte o seu desafio/�
 E preencher os campos de forma correta
 E selecionar Checkbox “Aceito receber mensagens da Verity”
 Então, ao preecher os requisitos solicitados e selecionar o botão "Enviar", o mesmo deve apresentar a mensagem "Obrigado"
+
+Cenário Verity - Não funcional
+Dado que o usuário acessa o site verity.com.br 
+Quando seleciona no menu a opção "Contato"
+E inclinar-se a barra de rolagem, até a opção "Vamos conversar"
+E preenche os requisitos "Nome/E-mail/Telefone-Celular/Nos conte o seu desafio/“Aceito receber mensagens da Verity”;
+E preencher os campos de forma correta
+E selecionar Checkbox “Aceito receber mensagens da Verity”
+E selecionar o botão "Enviar", o mesmo deve apresentar a mensagem "Obrigado"
+Então, deve ser validado se o banco de dados não excedeu no seu envio
+
