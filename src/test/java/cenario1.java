@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class cenario1 {
     //
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "src\\drive_oficial\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://verity.com.br");
