@@ -42,3 +42,12 @@ Cenário - Validação - Elementos "Culture e Tech/Nossas soluções_"
 Dado que o usuário acessa o site verity.com.br
 Quando realiza a validação dos elementos "Culture e Tech/Nossas soluções_"
 Então, o mesmo deve apresentar reportar a mensagem "O texto pesquisado existe/ O texte pesquisado não existe"
+
+Cenário Verity - End to End
+Dado que o usuário acessa o site verity.com.br 
+Quando seleciona no menu a opção "Contato"
+E inclinar-se a barra de rolagem, até a opção "Vamos conversar"
+E preenche os requisitos "Nome/E-mail/Telefone-Celular/Nos conte o seu desafio/“Aceito receber mensagens da Verity”;
+E preencher os campos de forma correta
+E selecionar Checkbox “Aceito receber mensagens da Verity”
+Então, ao preecher os requisitos solicitados e selecionar o botão "Enviar", o mesmo deve apresentar a mensagem "Obrigado"
